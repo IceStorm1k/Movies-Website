@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function () {
+  
 let header = document.querySelector("header");
 let menu = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
@@ -63,3 +65,5 @@ var comingSwiper = new Swiper(".coming-container", {
     }
   }
 });
+
+})

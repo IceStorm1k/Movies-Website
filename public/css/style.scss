@@ -188,7 +188,7 @@ header.shadow .logo{
 	margin-left: auto;
 	margin-right: auto;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 	gap: 1rem;
 	margin-top: 2rem;
 }
@@ -358,7 +358,7 @@ header.shadow .logo{
 		padding: 0.6rem 1.2rem;
 	}
 	.movies-container{
-		grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	}
 }
 @media (max-width: 472px){ 
@@ -386,10 +386,36 @@ header.shadow .logo{
 		padding: 7px;
 	}
 	.movies-container{
-		grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+		grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
 	}
 	.box .box-img{
 		height: 240px;
 	}
 }
 /* Registration page */
+.register{
+	text-align: center;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+  }
+
+  .close {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+  }
